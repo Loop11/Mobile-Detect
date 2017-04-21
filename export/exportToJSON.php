@@ -50,7 +50,10 @@ $json = array(
 		'os'       => $detect->getOperatingSystems(),
 		// Various utilities. To be further discussed.
 		'utilities' => $detect->getUtilities()
-	)
+	),
+
+    // Individual segments that could exist in User-Agent string.
+    'properties' => $detect->getProperties()
 );
 
 $fileName = dirname(__FILE__).'/../Mobile_Detect.json';
